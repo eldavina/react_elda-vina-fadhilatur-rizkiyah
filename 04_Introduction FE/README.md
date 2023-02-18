@@ -12,8 +12,8 @@
 -Inernet(inter connected network) : jaringan yg saling terhubung<br><br>
 -IP Adress(angka unik device) dan Domain Name(nama yang mudah diingat (.....com))<br><br>
 -Cara terhubung ke internet : <br><br>
- * Device
- * ISP : inernet service provider<br>
+ <ul> <li>Device</li>
+ <li> ISP : inernet service provider</li>
  fiber optic(jaringan bawah laut) dapat mengirimkan data dengan kapasitas besar<br><br>
 -Protocol HTTP(hypertext transfer protocol)<br>
  URL : protocol/IP address .port. domain. sub domain<br>
