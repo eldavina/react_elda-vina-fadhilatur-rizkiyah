@@ -13,7 +13,7 @@
 -IP Adress(angka unik device) dan Domain Name(nama yang mudah diingat (.....com))<br><br>
 -Cara terhubung ke internet : <br><br>
  <ul> <li>Device</li>
- <li> ISP : inernet service provider</li>
+ <li> ISP : inernet service provider</li> </ul>
  fiber optic(jaringan bawah laut) dapat mengirimkan data dengan kapasitas besar<br><br>
 -Protocol HTTP(hypertext transfer protocol)<br>
  URL : protocol/IP address .port. domain. sub domain<br>
