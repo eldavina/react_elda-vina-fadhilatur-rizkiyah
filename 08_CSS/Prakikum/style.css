@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Open+Sans:wght@400;700&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+nav{
+    font-family: 'Roboto', sans-serif;
+}
+.navbar-brand{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28.5px;
+}
+nav a{
+    font-size: 16px;
+    padding: 12px;
+}
+.navbar-nav{
+    display: none;
+}
+#nav-items-right{
+    display: block;
+}
+@media only screen and (max-width: 992px) {
+    .navbar-nav{
+        display: block;
+    }
+    #nav-items-right{
+        display: none;
+    }
+}
+
+.container-banner{
+    display: flex;
+    justify-content: space-around;
+    background-color: #37517E;
+    height: 760px;
+    align-items: center;
+}
+.banner-kiri{
+    align-items: baseline;
+}
+.banner-kiri-button{
+    display: flex;
+}
+.better-solution{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    color: white;
+    line-height: 56px;
+    position: absolute;
+    width: 561.42px;
+    height: 125px;
+    top: calc(50% - 125px/2 - 86.8px);
+}
+.we-are{
+    color: white;
+    opacity: 60%;
+}
+.get-started {
+    border-style: none;
+    border-radius: 50px;
+    padding: 9px 28px 12px 28px;
+    top : 10px;
+    background-color: #47B2E4;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-align: left;
+    text-decoration: none;
+}
+.watch-video{
+    margin-left: 65px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: white;
+    text-decoration: none;
+}
+#gambar-banner-kanan{
+    width: 636px;
+    height: 527px;
+}
+.container-join{
+    padding: 50px 426px;
+    height: 239px;
+    text-align: center;
+    background: #F3F5FA;
+}
+.join-our{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #37517E;
+}
+.tamem{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #444444;
+}
+#input{
+    width: 636px;
+    height: 42.5px;
+    top: 96.5px;
+    border-style: none;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
+    border-radius: 50px;
+}
+#subscribe{
+    position: relative;
+    left: 262px;
+    top: -43px;
+    width: 113.02px;
+    height: 42.5px;
+    background: #47B2E4;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    border-style: none;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+
+.footer-atas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 60px 80px 30px;
+    width: 1442px;
+    height: 339.19px;
+    background: #FFFFFF;
+}
+#arsha{
+    display: flex;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 28px;
+    color: #37517E;
+}
+.adam, .menu-footer a, .our-social #cras-fermentum{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color:  #5E5E5E;
+    text-decoration: none;
+}
+#judul-footer{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #37517E;
+}
+.menu-footer a{
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    left: 20px;
+    line-height: 40px;
+}
+#cras-fermentum{
+    font-family: 'Open Sans', sans-serif;
+}
+.social-account{
+    display: flex;
+}
+.social-account a{
+    width: 36px;
+    height: 36px;
+    background: #47B2E4;
+    border-radius: 18px;
+    text-decoration: none;
+    margin-right: 7.64px;
+}
+.footer-bawah{
+    height: 80.8px;
+    top: 1408px;
+    display: flex;
+    justify-content: space-between;
+    background: #37517E;
+}
+#copyright, #designed{
+    margin-top: 31px;
+    margin-left: 93px;
+    margin-right : 93px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    height: 19px;
+    top: 31px;
+}
+#designed span{
+    color: #47B2E4;
+}
+#copyright span{
+    font-weight: 700;
+    
+}
