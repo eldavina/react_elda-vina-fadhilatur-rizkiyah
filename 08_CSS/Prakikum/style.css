@@ -97,6 +97,13 @@ nav a{
     text-align: center;
     background: #F3F5FA;
 }
+
+.get-started:hover{
+    transition: ease-in;
+    transition-duration: 3s;
+    background-color: yellow;
+}
+
 .join-our{
     font-style: normal;
     font-weight: 600;
