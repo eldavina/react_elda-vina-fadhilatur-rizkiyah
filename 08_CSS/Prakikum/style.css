@@ -26,15 +26,6 @@ nav a{
 #nav-items-right{
     display: block;
 }
-@media only screen and (max-width: 992px) {
-    .navbar-nav{
-        display: block;
-    }
-    #nav-items-right{
-        display: none;
-    }
-}
-
 .container-banner{
     display: flex;
     justify-content: space-around;
@@ -43,7 +34,7 @@ nav a{
     align-items: center;
 }
 .banner-kiri{
-    align-items: baseline;
+    /* align-items: baseline; */
 }
 .banner-kiri-button{
     display: flex;
@@ -54,10 +45,10 @@ nav a{
     font-size: 48px;
     color: white;
     line-height: 56px;
-    position: absolute;
-    width: 561.42px;
-    height: 125px;
-    top: calc(50% - 125px/2 - 86.8px);
+    /* position: absolute; */
+    /* width: 561.42px;
+    height: 125px; */
+    /* top: calc(50% - 125px/2 - 86.8px); */
 }
 .we-are{
     color: white;
@@ -92,7 +83,7 @@ nav a{
     height: 527px;
 }
 .container-join{
-    padding: 50px 426px;
+    padding: 50px   ;
     height: 239px;
     text-align: center;
     background: #F3F5FA;
@@ -119,19 +110,27 @@ nav a{
     line-height: 22px;
     color: #444444;
 }
+.formwrap{
+    max-width: 636px;
+    margin: 0 auto;
+}
 #input{
-    width: 636px;
+    width: 100%;
     height: 42.5px;
-    top: 96.5px;
+    padding: 20px;
     border-style: none;
     background: #FFFFFF;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
     border-radius: 50px;
 }
-#subscribe{
+form{
     position: relative;
-    left: 262px;
-    top: -43px;
+    
+}
+#subscribe{
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 113.02px;
     height: 42.5px;
     background: #47B2E4;
@@ -147,10 +146,10 @@ nav a{
 
 .footer-atas{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 60px 80px 30px;
-    width: 1442px;
+    justify-content: space-around;
+    padding-right : 93px;
+    padding-left : 93px;
+    align-items: center;
     height: 339.19px;
     background: #FFFFFF;
 }
@@ -169,6 +168,7 @@ nav a{
     line-height: 24px;
     color:  #5E5E5E;
     text-decoration: none;
+    width: fit-content;
 }
 #judul-footer{
     font-style: normal;
@@ -199,15 +199,14 @@ nav a{
 }
 .footer-bawah{
     height: 80.8px;
-    top: 1408px;
+    /* top: 1408px; */
     display: flex;
     justify-content: space-between;
     background: #37517E;
+    align-items: center;
+    padding: 0 93px;
 }
 #copyright, #designed{
-    margin-top: 31px;
-    margin-left: 93px;
-    margin-right : 93px;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -215,12 +214,44 @@ nav a{
     line-height: 21px;
     color: #FFFFFF;
     height: 19px;
-    top: 31px;
 }
 #designed span{
     color: #47B2E4;
 }
 #copyright span{
     font-weight: 700;
-    
+}
+@media only screen and (max-width: 992px) {
+    .navbar-nav{
+        display: block;
+    }
+    #nav-items-right{
+        display: none;
+    }
+    .container-banner{
+        flex-direction: column-reverse;
+        min-height: 500px;
+        padding: 50px;
+    }
+    #gambar-banner-kanan{
+        width: 90%;
+        height: 90%;
+    }
+    .footer-atas{
+        flex-wrap: wrap;
+        min-height: 500px;
+        max-height: fit-content;
+        /* margin: auto;*/
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-left: 30px;  
+
+    }
+    .adam, .menu-footer a, .our-social #cras-fermentum, #arsha{
+        max-width: fit-content;
+        
+    }
+    .menu-footer a  {
+        line-height: 40%;
+    }
 }
