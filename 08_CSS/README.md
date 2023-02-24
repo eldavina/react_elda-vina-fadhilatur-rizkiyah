@@ -1,4 +1,4 @@
-<h2> CSS adalah ... </h2>
+<h2> CSS adalah .... </h2>
 Cascading Style Sheet (CSS) perintah untuk mempercantik tampilan web.
 <h2> Menambahkan file CSS </h2>
 <ul>
