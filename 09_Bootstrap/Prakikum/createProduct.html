@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <style>
+       @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        *{
+            font-family: 'Roboto', sans-serif;
+        }
+    </style> -->
+    <title>Create Product</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Simple Header</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="nav-items-right">
+                    <a href="#" class="btn btn-primary mx-1">Home</a>
+                    <a href="#" class="text-decoration-none mx-1">Features</a>
+                    <a href="#" class="text-decoration-none mx-1">Pricing</a>
+                    <a href="#" class="text-decoration-none mx-1">FAQs</a>
+                    <a href="#" class="text-decoration-none mx-1">About</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto p-5">
+                    <div class="text-center">
+                        <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" width="71.53px">
+                        <h1 class="text-center" style="font-size: 31px;"> Create Product</h1>
+                        <span class="text-center text-dark">
+                            Below is an example form built entirely with Bootstrap's form controls. 
+                            Each required form group has a validation state that can be triggered 
+                            by attempting to submit the form without completing it. <br/>
+                        </span>
+                    </div>
+                </div>
+        <!-- <div class="d-flex justify-content-center flex-column w-50 p-3 mx-auto" >        
+            <div class=" d-flex justify-content-center flex-column" >
+                <div class="text-center">
+                    <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" width="71.53px">
+                </div>
+                <h1 class="text-center"> Create Product</h1>
+                <span class="text-center">
+                    Below is an example form built entirely with Bootstrap's form controls. 
+                    Each required form group has a validation state that can be triggered 
+                    by attempting to submit the form without completing it. <br/>
+                </span>
+            </div> -->
+                <div class="container">
+                    <div class="row">
+                            <div class="row justify-content-center">
+                                <div class="col-5">
+                                    <div class="col">
+                                    <form class="justify-content-end needs-validation" novalidate>
+                                        <h2 style="font-size: 23px;">Detail Product</h2>
+                                        <!-- Product Name -->
+                                        <div class="mb-3 col-6">
+                                            <label for="name" class="form-label">Product Name </label>
+                                            <input type="text" class="form-control" id="namaproduk" required>
+                                            <div class="invalid-feedback">
+                                                Please choose a Product Name
+                                              </div>
+                                        </div>
+                                        <!-- Product Category -->
+                                        <div class="mb-3 col-5">
+                                            <label for="productcategory" class="form-label">Product Category </label>
+                                            <select class="form-select" aria-label="productcategory" aria-placeholder="Choose...." required>
+                                                <option value="1">A</option>
+                                                <option value="2">B</option>
+                                                <option value="3">C</option>
+                                              </select>
+                                              <div class="invalid-feedback">
+                                                Please choose a Product Category
+                                              </div>
+                                        </div>
+                                        <!-- Image of Product -->
+                                        <div class="mb-3">
+                                            <label for="imageoproduct" class="form-label">Image of Product</label>
+                                            <div class="col-6">
+                                                <input class="form-control btn btn-primary " type="file" id="imageoproduct" required>
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                Please choose an Image
+                                              </div>
+                                        </div>
+                                        <!-- Product Freshness -->
+                                        <div class="mb-3">
+                                            <label for="productfreshness" class="form-label">Product Freshness </label>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="productfreshness" id="productfreshness" required>
+                                                <label class="form-check-label" for="productfreshness">
+                                                    Brand New
+                                                </label>
+                                                <div class="invalid-feedback">
+                                                    Please choose a Product Freshness
+                                                  </div>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="productfreshness" id="productfreshness">
+                                                <label class="form-check-label" for="productfreshness">
+                                                    Second Hand
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="productfreshness" id="productfreshness">
+                                                <label class="form-check-label" for="productfreshness">
+                                                    Refurbished
+                                                </label>
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                Please choose a Product Freshness
+                                              </div>
+                                        </div>
+                                        <!-- Additional Description-->
+                                        <label for="additionaldescription" class="form-label">Additional Description </label>
+                                        <div class="input-group">
+                                            <textarea class="form-control" aria-label="With textarea" required></textarea>
+                                            <div class="invalid-feedback">
+                                                Please choose a Additional Description
+                                            </div>
+                                        </div>
+                                        <!-- Produk Price -->
+                                        <label for="name" class="form-label">Product Price </label>
+                                        <div class="mb-3">
+                                            <div class="col-2">
+                                                <input type="number" class="form-control" id="productprice" placeholder="$ 100" required>
+                                            </div>
+                                            <div class="invalid-feedback">
+                                                Please choose a Product Price
+                                              </div>
+                                        </div>
+
+                                        <div class="col-auto">
+                                            <button type="submit" class="btn btn-primary w-100">Submit</button>
+                                        </div>
+                                            <!-- Product name : <br/>
+                                            <input type="text" name="namaproduk"> <br/>
+                                            Product Category : <br/>
+                                            <select name="productcategory" style="width:71px">
+                                                <option value="1"> </option>
+                                                <option value="2"> </option>
+                                                <option value="3"> </option>
+                                            </select> <br/>
+                                            Product Freshness : <br/>
+                                            <input type="radio" name="productfreshnesss" value="brandnew">Brand New <br/>
+                                            <input type="radio" name="productfreshnesss" value="secondhank">Second Hank <br/>
+                                            <input type="radio" name="productfreshnesss" value="Refurbished">Refurbished <br/>
+                                            Image of Product <input type="file" name="fotoproduk"> <br/> -->
+                                </div>
+        
+                </form>
+            </div>
+        </div>
+                        </div>
+                    </div>
+                <!-- </div> -->
+                
+                <!-- <div class="col-6">.col-6</div> -->
+                  </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script >
+        (() => {
+        'use strict'
+      
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+      
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+          form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+      
+            form.classList.add('was-validated')
+          }, false)
+        })
+      })()
+    </script>
+</body>
+</html>
