@@ -52,7 +52,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-5">
                                     <div class="col">
-                                        <form class="justify-content-end needs-validation" novalidate onsubmit="validasi()">
+                                        <form class="justify-content-end needs-validation" novalidate id="form">
                                             <h2 style="font-size: 23px;">Detail Form</h2>
                                             <!--  Name -->
                                             <div class="mb-3">
@@ -181,6 +181,10 @@
                                                   </div>
                                             </div>
 
+                                            <div class="alert alert-dismissible fade d-none" role="alert" id="alertForm">
+                                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                            </div>
+
                                             <div class="col-auto">
                                                 <button type="submit" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#submit">Create Account</button>
                                             </div>
@@ -215,20 +219,31 @@
           })()
 
           
-            function validasi(){
+          document.getElementById('form').addEventListener('submit', function (e) {
+                e.preventDefault();
                 const firstname = document.getElementById('firstname').value;
                 const lastname = document.getElementById('lastname').value;
                 const username = document.getElementById('username').value;
                 const email = document.getElementById('email').value;
                 const address = document.getElementById('address').value;
+                const alertForm = document.getElementById('alertForm');
 
                 if( firstname != '' && lastname != '' && username != '' && email != '' && address != '' ){
-                  return 
-                } else {
-                  alert('Please enter a valid data!')
+                alertForm.innerHTML = "Account created successfully";
+                alertForm.classList.remove('d-none');
+                alertForm.classList.add('show');
+                alertForm.classList.remove('alert-danger');
+                alertForm.classList.add('alert-success');
+                } 
+                else {
+                alertForm.innerHTML = "Please enter a valid data!";
+                alertForm.classList.remove('d-none');
+                alertForm.classList.add('show');
+                alertForm.classList.remove('alert-success');
+                alertForm.classList.add('alert-danger');
                 }
             }
+          )
         </script>
-
     </body>
 </html>
