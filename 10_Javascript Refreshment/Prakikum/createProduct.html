@@ -52,7 +52,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-5">
                                     <div class="col">
-                                        <form class="justify-content-end needs-validation" novalidate onsubmit="validasi">
+                                        <form class="justify-content-end needs-validation" novalidate id="form">
                                             <h2 style="font-size: 23px;">Detail Product</h2>
                                             <!-- Product Name -->
                                             <div class="mb-3 col-6">
@@ -76,9 +76,9 @@
                                             </div>
                                             <!-- Image of Product -->
                                             <div class="mb-3">
-                                                <label for="imageoproduct" class="form-label">Image of Product</label>
+                                                <label for="imageofproduct" class="form-label">Image of Product</label>
                                                 <div class="col-6">
-                                                    <input class="form-control btn btn-primary " type="file" id="imageoproduct" required>
+                                                    <input class="form-control btn btn-primary " type="file" id="imageofproduct" required>
                                                 </div>
                                                 <div class="invalid-feedback">
                                                     Please choose an Image
@@ -87,26 +87,28 @@
                                             <!-- Product Freshness -->
                                             <div class="mb-3">
                                                 <label for="productfreshness" class="form-label">Product Freshness </label>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="productfreshness" id="productfreshness" required>
-                                                    <label class="form-check-label" for="productfreshness">
-                                                        Brand New
-                                                    </label>
-                                                    <div class="invalid-feedback">
-                                                        Please choose a Product Freshness
-                                                      </div>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="productfreshness" id="productfreshness">
-                                                    <label class="form-check-label" for="productfreshness">
-                                                        Second Hand
-                                                    </label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="productfreshness" id="productfreshness">
-                                                    <label class="form-check-label" for="productfreshness">
-                                                        Refurbished
-                                                    </label>
+                                                <div id="productfreshness form-check has-validation">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="productfreshness" id="brandnew" required>
+                                                        <label class="form-check-label" for="productfreshness">
+                                                            Brand New
+                                                        </label>
+                                                        <div class="invalid-feedback">
+                                                            Please choose a Product Freshness
+                                                          </div>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="productfreshness" id="secondhand">
+                                                        <label class="form-check-label" for="productfreshness">
+                                                            Second Hand
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="productfreshness" id="refurbished">
+                                                        <label class="form-check-label" for="productfreshness">
+                                                            Refurbished
+                                                        </label>
+                                                    </div>
                                                 </div>
                                                 <div class="invalid-feedback">
                                                     Please choose a Product Freshness
@@ -132,7 +134,7 @@
                                             </div>
                                         
                                             <div class="col-auto">
-                                                <button type="submit" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#submit" id="submit">Submit</button>
+                                                <button type="submit" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#submit" id="button" disabled>Submit</button>
                                             </div>
                                         
                                             <!-- <div class="modal fade" id="submit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -183,71 +185,52 @@
           })()
         </script>
         <script>
-            document.getElementById("submit").addEventListener("click", function () {
-		    var namaproduk = document.getElementById("namaproduk").value;
-		    var kategoriproduk = document.getElementById("kategoriproduk").value;
-		    var imageoproduct = document.getElementById("imageofproduct").value;
-            var productfreshness = document.getElementById("productfreshness").value;
-            var productprice = document.getElementById("productprice").value;
-            var additionaldescription = document.getElementById("additionaldescription").value;
             
-            // if (document.getElementById('namaproduk').setAttribute('length',2)){
-            //     return true;
-            // } else{
-            //     alert('Anda harus mengisi data dengan lengkap !');
-            // }
+            const form = document.getElementById('form')
+		    const namaproduk = document.getElementById('namaproduk');
+		    const kategoriproduk = document.getElementById('kategoriproduk');
+		    const imageofproduct = document.getElementById('imageofproduct');
+            const productfreshness = document.getElementById('productfreshness');
+            const productprice = document.getElementById('productprice');
+            const additionaldescription = document.getElementById('additionaldescription');
+            const submit = document.getElementById('button');
+            const simbol =  /[!@#$%]/;
             
-            if (namaproduk == "" ){
-                alert("Please enter a valid Product Name");
-            } else {
-                if (namaproduk.length > 25 ){
-                    alert("Product Name must not be more than 25 characters")
+            submit.addEventListener('click', function() {
+                if (namaproduk.value.length > 25) {
+                   return alert("Product Name must not be more than 25 characters")
+                } else if (!namaproduk.value){
+                        return alert("Please enter a valid Prouct Name!")
+                } else if (!productprice.value){
+                        return alert("Please enter a valid Product Price!")
+                } else if (namaproduk.value) {
+                    if (namaproduk.value.length > 10){
+                        alert(`Length of the Product Name is ${namaproduk.value.length}. Product Name must not exceed 25 characters`)
+                    }
+                    if (namaproduk.value.match(simbol)){
+                        return alert("Product Name must not contain symbol")
+                    }
+                } else if ( !kategoriproduk.value || !imageofproduct.value || !productfreshness.value || !additionaldescription.value ){
+                    // alert("Please fill out all required fields");
+                    return alert(`The field must be filled in`)
+                } 
+                    return  alert (`Product Name = ${namaproduk.value},
+                                    Product Category = ${kategoriproduk.value},
+                                    Image of Product = ${imageofproduct.value},
+                                    Additional Description = ${additionaldescription.value}
+                                    Product Price = ${productprice.value} `)
+               
+            })
+            form.addEventListener('input', function(){
+                const valid = form.checkValidity();
+
+                if (valid) {
+                    submit.removeAttribute('disabled')
+                } else {
+                    submit.setAttribute('disabled', 'disabled') 
                 }
-            }
+            })
 
-            if (namaproduk === "") {
-              alert("The Product Name field must be filled in.");
-              return;
-            }
-        }
-            // } else if (/[**@/#{}**]/.test(namaproduk)) {
-            //   alert("Name must not contain symbols.");
-            //   return;
-            // }
-
-            // if (kategoriproduk === "") {
-            //   alert("The Product Category field must be filled in.");
-            //   return;
-            // }
-            // if (imageoproduct === "") {
-            //   alert("The Image of Product field must be filled in.");
-            //   return;
-            // }
-            // if (!productfreshness) {
-            //   alert("The Product Freshness field must be filled in.");
-            //   return;
-            // }
-            // if (additionaldescription === "") {
-            //   alert("The Additional Description field must be filled in.");
-            //   return;
-            // }
-            // if (productprice === "") {
-            //   alert("The Product Price field must be filled in.");
-            //   return;
-            // }
-
-            // if (document.getElementById("namaproduk").length <= 2){
-            //     return true;
-            // } else{
-            //     alert('Anda harus mengisi data dengan lengkap !');
-            // }
-		    // if (nama != "" && email!="" && alamat !="") {
-		    // 	return true;
-		    // }else{
-		    // 	alert('Anda harus mengisi data dengan lengkap !');  
-		    // }
-            
-	//}
         </script>
     </body>
 </html>
