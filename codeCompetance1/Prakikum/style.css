@@ -1,0 +1,150 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+nav{
+    font-family: 'Roboto', sans-serif;
+}
+.navbar-brand{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28.5px;
+}
+nav a{
+    font-size: 16px;
+    padding: 10px;
+}
+.navbar-nav{
+    display: none;
+}
+#nav-items-right{
+    display: block;
+}
+#nav-items-right a{ 
+    color: #d7dadf;
+}
+#navbar{
+    background: transparent;
+}
+
+.go-space{
+    color: #350052;
+}
+
+/* .welcome{
+    position: relative;
+}
+.welcome-2{
+    position: absolute;
+    align-items: baseline;
+} */
+
+.footer-atas{
+    display: flex;
+    justify-content: space-around;
+    padding-right : 93px;
+    padding-left : 93px;
+    align-items: center;
+    height: 339.19px;
+    background: #f9fafe;
+}
+#arsha{
+    display: flex;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 28px;
+    color: #350052;
+}
+.adam, .menu-footer a, .our-social #cras-fermentum{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color:  #5E5E5E;
+    text-decoration: none;
+    width: fit-content;
+}
+#judul-footer{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #37517E;
+}
+.menu-footer a{
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    left: 20px;
+    line-height: 20px;
+}
+#cras-fermentum{
+    font-family: 'Open Sans', sans-serif;
+}
+.social-account{
+    display: flex;
+}
+.social-account a{
+    width: 36px;
+    height: 36px;
+    background: #47B2E4;
+    border-radius: 18px;
+    text-decoration: none;
+    margin-right: 7.64px;
+}
+.footer-bawah{
+    height: 80.8px;
+    /* top: 1408px; */
+    display: flex;
+    justify-content: space-between;
+    background: #350052;
+    align-items: center;
+    padding: 0 93px;
+}
+#copyright, #designed{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    height: 19px;
+}
+#designed span{
+    color: #47B2E4;
+}
+#copyright span{
+    font-weight: 700;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .navbar-nav{
+        display: block;
+    }
+    #nav-items-right{
+        display: none;
+    }
+    .footer-atas{
+        flex-wrap: wrap;
+        min-height: 500px;
+        max-height: fit-content;
+        /* margin: auto;*/
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-left: 10px;  
+
+    }
+    .adam, .menu-footer a, .our-social #cras-fermentum, #arsha{
+        max-width: fit-content;
+        
+    }
+    .menu-footer a  {
+        line-height: 40%;
+    }
+}
+/* .banner {
+    width: fit-content;
+} */
