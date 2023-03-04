@@ -1,11 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap');
+
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: 'Jost', sans-serif;
-}
-nav{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 .navbar-brand{
     font-weight: 500;
@@ -40,6 +40,16 @@ nav a{
     position: absolute;
     align-items: baseline;
 } */
+#banner-text{
+    color: #350052;
+    margin-left: 80px;
+}
+#contact-us{
+    background: #f9fafe;
+}
+/* #contact-us-text {
+    padding: 10px;
+} */
 
 .footer-atas{
     display: flex;
@@ -48,9 +58,9 @@ nav a{
     padding-left : 93px;
     align-items: center;
     height: 339.19px;
-    background: #f9fafe;
+    background: #d7dadf
 }
-#arsha{
+#go-space{
     display: flex;
     font-style: normal;
     font-weight: 600;
@@ -58,7 +68,7 @@ nav a{
     line-height: 28px;
     color: #350052;
 }
-.adam, .menu-footer a, .our-social #cras-fermentum{
+.address, .menu-footer a, .our-social #keterangan-medsos{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -75,21 +85,17 @@ nav a{
     color: #37517E;
 }
 .menu-footer a{
-    font-family: 'Open Sans', sans-serif;
     position: relative;
     left: 20px;
     line-height: 20px;
 }
-#cras-fermentum{
-    font-family: 'Open Sans', sans-serif;
-}
 .social-account{
     display: flex;
 }
-.social-account a{
+.social-account img{
     width: 36px;
     height: 36px;
-    background: #47B2E4;
+    background: #5E5E5E;
     border-radius: 18px;
     text-decoration: none;
     margin-right: 7.64px;
@@ -137,7 +143,7 @@ nav a{
         margin-left: 10px;  
 
     }
-    .adam, .menu-footer a, .our-social #cras-fermentum, #arsha{
+    .address, .menu-footer a, .our-social #keterangan-medsos, #go-space{
         max-width: fit-content;
         
     }
