@@ -5,6 +5,7 @@ Saat aplikasi dijalankan/dirender
 <li> Update </li>
 Mengubah data yg telah di mounting
 <li> Unmounting </li>
+</ul>
 Menghancurkan data yang sebelumnya didefinisikan
 <h2> Apa itu Props? </h2>
 Props adalah mempasing data dari parent component ke child cdomponent. untuk komunikasi antar komponen.
