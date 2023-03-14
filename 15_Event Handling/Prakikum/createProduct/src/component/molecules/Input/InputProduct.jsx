@@ -25,7 +25,8 @@ function InputProduct({name, nameProduct , A,B,C, image, description, Brand_New,
                         id="name"
                         required=""
                         value={name}
-                        onChange={nameProduct}
+                        // onChange={nameProduct}
+                        
                       />
                       <div className="invalid-feedback">
                         Please fill out this field

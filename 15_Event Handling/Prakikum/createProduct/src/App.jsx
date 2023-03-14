@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react'
 import Header from './component/molecules/Header/Header.molecules';
 import InputProduct from './component/molecules/Input/InputProduct';
@@ -23,6 +22,15 @@ function App(){
       e.target.value = "";
     }
   };
+    // const handleSubmit = (e) =>{
+    //   e.preventDefault();
+    //   if (this.validateValues()){
+    //     this.setState({validated : true})
+    //   }
+    //   else{
+    //     this.setState({validated:false})
+    //   }
+    // };
 
   return (
   <div>

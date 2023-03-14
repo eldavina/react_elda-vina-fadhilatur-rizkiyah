@@ -10,13 +10,16 @@ function Header({language, article, changeLang}){
           width="71.53px"
           
         />
-        <h1 className="text-center" style={{ fontSize: 31 }} onClick={changeLang}>
+        <h1 className="text-center" style={{ fontSize: 31 }}>
           {language ? article.title.id : article.title.en}
         </h1>
-        <span className="text-center text-dark" onClick={changeLang}>
+        <span className="text-center text-dark">
           {language ? article.description.id : article.description.en}
         </span>
-        <br></br>
+        <br/>
+        {/* <button className="btn btn-info" onClick={changeLang} style={{margin:20}}>
+          {language ? "Ganti Bahasa" : "Change Language"}
+        </button> */}
       </div>
     </div>
   )
