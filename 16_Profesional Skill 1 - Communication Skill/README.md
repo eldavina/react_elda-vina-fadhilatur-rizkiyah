@@ -53,7 +53,7 @@ Memastikan bahwa tujuan organisasi dapat tercapai.
         <li> Menyelesaikan masalah lebih cepat</li>
         <li> Memudahkan Interpersonal Communication</li>
         <li> Menjalin hubungan baik antar orang</li>
-        <li> Teamwork lebih terjalin</li>
+        <li> Teamwork lebih terjalin </li>
         <li> Memungkinkan untuk mendapaatkan lebih banyak ide/masukan dari orang lain </li>
     </ul>
     Kekurangan :
@@ -87,3 +87,4 @@ Memastikan bahwa tujuan organisasi dapat tercapai.
     <li>Jadikan sebagai budaya</li>
     <li>Komunikasikan jam kerja</li>
 </ul>
+
