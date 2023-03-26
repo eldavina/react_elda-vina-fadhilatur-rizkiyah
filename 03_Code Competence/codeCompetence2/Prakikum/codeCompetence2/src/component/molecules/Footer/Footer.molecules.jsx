@@ -1,4 +1,9 @@
 import React from "react";
+import "../Footer/Footer.style.css";
+import fb from "../../../assets/fb.png";
+import ig from "../../../assets/ig.png";
+import twt from "../../../assets/twt.png";
+import yt from "../../../assets/yt.png";
 
 const Footer = () => {
 	return (
@@ -44,16 +49,16 @@ const Footer = () => {
 						</p>
 						<div className="social-account">
 							<a href="#">
-								<img src="fb.png" href="#" />
+								<img src={fb} href="#" />
 							</a>
 							<a href="#">
-								<img src="ig.png" href="#" />
+								<img src={ig} href="#" />
 							</a>
 							<a href="#">
-								<img src="twt.png" href="#" />
+								<img src={twt} href="#" />
 							</a>
 							<a href="#">
-								<img src="yt.png" href="#" />
+								<img src={yt} href="#" />
 							</a>
 						</div>
 					</div>

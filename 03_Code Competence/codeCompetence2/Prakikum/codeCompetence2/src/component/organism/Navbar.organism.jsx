@@ -1,4 +1,6 @@
 import React from "react";
+import "../organism/Navbar.style.css";
+import logo from "../../assets/logo.png";
 
 const Navbar = () => {
 	return (
@@ -10,7 +12,7 @@ const Navbar = () => {
 					<div className="container-fluid">
 						<div className="nav-items-left">
 							<a className="navbar-brand" href="#">
-								<img src="logo.png" width={30} />
+								<img src={logo} width={30} />
 								<span className="go-space">Go Space</span>
 							</a>
 						</div>
@@ -31,11 +33,11 @@ const Navbar = () => {
 							<a href="#" className="btn btn-primary mx-1">
 								Mulai Menjelajah
 							</a>
-							<a href="#" className="text-decoration-none mx-1">
-								About
-							</a>
 							<a href="#contact-us" className="text-decoration-none mx-1">
 								Contact Us
+							</a>
+							<a href="#about-us" className="text-decoration-none mx-1">
+								About Us
 							</a>
 						</div>
 					</div>

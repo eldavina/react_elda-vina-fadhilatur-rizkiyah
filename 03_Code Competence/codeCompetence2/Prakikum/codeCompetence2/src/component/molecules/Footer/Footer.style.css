@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap");
+
+.footer-atas {
+	display: flex;
+	justify-content: space-around;
+	padding-right: 93px;
+	padding-left: 93px;
+	align-items: center;
+	height: 339.19px;
+	background: #d7dadf;
+}
+#go-space {
+	display: flex;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 28px;
+	color: #350052;
+}
+.address,
+.menu-footer a,
+.our-social #keterangan-medsos {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: #5e5e5e;
+	text-decoration: none;
+	width: fit-content;
+}
+#judul-footer {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	color: #37517e;
+}
+.menu-footer a {
+	position: relative;
+	left: 20px;
+	line-height: 20px;
+}
+.social-account {
+	display: flex;
+}
+.social-account img {
+	width: 36px;
+	height: 36px;
+	background: #5e5e5e;
+	border-radius: 18px;
+	text-decoration: none;
+	margin-right: 7.64px;
+}
+.footer-bawah {
+	height: 80.8px;
+	/* top: 1408px; */
+	display: flex;
+	justify-content: space-between;
+	background: #350052;
+	align-items: center;
+	padding: 0 93px;
+}
+#copyright,
+#designed {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
+	height: 19px;
+}
+#designed span {
+	color: #47b2e4;
+}
+#copyright span {
+	font-weight: 700;
+}
+
+@media only screen and (max-width: 992px) {
+	.footer-atas {
+		flex-wrap: wrap;
+		min-height: 500px;
+		max-height: fit-content;
+		/* margin: auto;*/
+		padding-left: 10%;
+		padding-right: 10%;
+		margin-left: 10px;
+	}
+	.address,
+	.menu-footer a,
+	.our-social #keterangan-medsos,
+	#go-space {
+		max-width: fit-content;
+	}
+	.menu-footer a {
+		line-height: 40%;
+	}
+}

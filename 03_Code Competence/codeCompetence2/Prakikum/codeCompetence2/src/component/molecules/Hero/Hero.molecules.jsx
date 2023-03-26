@@ -1,11 +1,13 @@
 import React from "react";
+import "../Hero/Hero.style.css";
+import homebanner from "../../../assets/homebanner.jpg";
 
 const Hero = () => {
 	return (
 		<div>
 			<div id="banner">
 				<div className="banner">
-					<img src="homebanner.jpg" className="d-block w-100" alt="..." />
+					<img src={homebanner} className="d-block w-100" id="gambar" alt="..." />
 					<div className="position-absolute top-50 w-50" id="banner-text">
 						<h1 className="fw-bold fs-1 lh-lg">Go Space</h1>
 						<p className="fw-light">
