@@ -38,12 +38,12 @@ SPA adalah salah satu jenis aplikasi website dimana hanya ada 1 halaman yang men
             </ul>
     </ol>
 <h2> React Router</h2>
-<ul>
-<li>Browser Router</li>
-<li>Switch</li>
-<li>Router</li>
-<li>Link</li>
-</ul>
+    <ul>
+        <li>Browser Router</li>
+        <li>Switch</li>
+        <li>Router</li>
+        <li>Link</li>
+    </ul>
 <h2> Apa itu URL Parameter? </h2>
 URL Parameter adalah suatu parameter yang nilainya ditetapkan secara dinamis di URL halaman.
 <h2> Hook Routing React</h2>
