@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Open+Sans:wght@400;700&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.container-join{
+    padding: 50px   ;
+    height: 239px;
+    text-align: center;
+    background: #F3F5FA;
+}
+
+.get-started:hover{
+    transition: ease-in;
+    transition-duration: 3s;
+    background-color: yellow;
+}
+
+.join-our{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #37517E;
+}
+.tamem{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #444444;
+}
+.formwrap{
+    max-width: 636px;
+    margin: 0 auto;
+}
+#input{
+    width: 100%;
+    height: 42.5px;
+    padding: 20px;
+    border-style: none;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
+    border-radius: 50px;
+}
+form{
+    position: relative;
+    
+}
+#subscribe{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 113.02px;
+    height: 42.5px;
+    background: #47B2E4;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    border-style: none;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
