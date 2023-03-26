@@ -46,7 +46,7 @@ SPA adalah salah satu jenis aplikasi website dimana hanya ada 1 halaman yang men
     </ul>
 <h2> Apa itu URL Parameter? </h2>
 URL Parameter adalah suatu parameter yang nilainya ditetapkan secara dinamis di URL halaman.
-<h2> Hook Routing React</h2>
+<h2> Hook Routing React </h2>
 <ul>
 <li>Browser Router</li>
 <li>UseHistory</li>
