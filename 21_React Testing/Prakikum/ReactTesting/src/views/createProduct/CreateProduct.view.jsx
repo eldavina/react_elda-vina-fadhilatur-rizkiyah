@@ -13,54 +13,9 @@ import { useDispatch } from "react-redux";
 const CreateProduct = () => {
 	// const [createproducts, setCreateProducts] = useState([]);
 
-	const regex = /[a-zA-Z0-9]+([_ -]?[a-zA-Z0-9])*$/;
-	// /^[^\s][\w\s]*[^\s\W]$/;
-
-	const schema = Yup.object().shape({
-		name: Yup.string()
-			.required()
-			.matches(regex, "Product Name Must Not Contain Symbol")
-			.min(5, "Product Name Too Short!")
-			.max(25, "Product Name Must Not Exceed 25 Characters"),
-		category: Yup.string().required(),
-		image: Yup.string().required(),
-		freshness: Yup.string().required(),
-		description: Yup.string(),
-		price: Yup.number().positive().integer().required(),
-	});
-
 	const createProduct = useCreateProductSelector();
 
 	const dispatch = useDispatch();
-
-	const formik = useFormik({
-		initialValues: {
-			// id: "",
-			name: "",
-			category: "",
-			image: "",
-			freshness: "",
-			description: "",
-			price: "",
-		},
-		validationSchema: schema,
-		onSubmit: (values) => {
-			console.log("cek values", values);
-			dispatch(
-				createAction.add([...createProduct, { ...values, id: crypto.randomUUID() }])
-			);
-		},
-		// onEdit: (values) => {
-		// 	const editProduk = createProduct.slice();
-		// 	editProduk.splice(id, 1, { id: createProduct.id, ...values });
-		// },
-		// onEdit: (values) => {
-		// 	handleEdit(values);
-		// },
-		// onEdit: (values) => {
-		// 	dispatch(createAction.edit([...createProduct, { ...values }]));
-		// },
-	});
 
 	console.log("error", formik.errors);
 
@@ -105,7 +60,7 @@ const CreateProduct = () => {
 					<Header article={Article} language={indonesia} changeLang={handleLang} />
 					<div className="container">
 						<div className="row">
-							<InputProduct formik={formik} />
+							<InputProduct />
 
 							<ListItem
 								createproducts={createProduct}

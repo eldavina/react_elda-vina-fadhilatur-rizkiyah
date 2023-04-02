@@ -2,11 +2,53 @@ import { useFormik, Formik, Form, Field } from "formik";
 import React, { useState } from "react";
 import * as Yup from "yup";
 
-const InputProduct = ({ formik }) => {
+const InputProduct = () => {
 	// const[category, setCategory]=useState("");
 	// const handleChange = (e) => {
 	//   setCategory(e.target.value)
+	const regex = /[a-zA-Z0-9]+([_ -]?[a-zA-Z0-9])*$/;
+	// /^[^\s][\w\s]*[^\s\W]$/;
 
+	const schema = Yup.object().shape({
+		name: Yup.string()
+			.required()
+			.matches(regex, "Product Name Must Not Contain Symbol")
+			.min(5, "Product Name Too Short!")
+			.max(25, "Product Name Must Not Exceed 25 Characters"),
+		category: Yup.string().required(),
+		image: Yup.string().required(),
+		freshness: Yup.string().required(),
+		description: Yup.string(),
+		price: Yup.number().positive().integer().required(),
+	});
+	const formik = useFormik({
+		initialValues: {
+			// id: "",
+			name: "",
+			category: "",
+			image: "",
+			freshness: "",
+			description: "",
+			price: "",
+		},
+		validationSchema: schema,
+		onSubmit: (values) => {
+			console.log("cek values", values);
+			dispatch(
+				createAction.add([...createProduct, { ...values, id: crypto.randomUUID() }])
+			);
+		},
+		// onEdit: (values) => {
+		// 	const editProduk = createProduct.slice();
+		// 	editProduk.splice(id, 1, { id: createProduct.id, ...values });
+		// },
+		// onEdit: (values) => {
+		// 	handleEdit(values);
+		// },
+		// onEdit: (values) => {
+		// 	dispatch(createAction.edit([...createProduct, { ...values }]));
+		// },
+	});
 	return (
 		<div className="inpuut-product">
 			<div className="container">
@@ -38,8 +80,12 @@ const InputProduct = ({ formik }) => {
 											onEdit={formik.values.name}
 											// onEdit={handleEdit}
 											// onChange={nameProduct}
+											data-testid="inputname-input"
 										/>
-										<div className="invalid-feedback">{formik.errors.name}</div>
+										<div className="invalid-feedback" data-testid="inputname-error">
+											Name must have up to 5 characters, must not exceed 25 characters, and
+											must not contain symbol.
+										</div>
 									</div>
 
 									{/* Product Category */}
@@ -204,6 +250,7 @@ const InputProduct = ({ formik }) => {
 											data-bs-toggle="modal"
 											data-bs-target="#submit"
 											id="button-add"
+											data-testid="btnSubmit"
 											//value={onSubmit}
 											// onClick={onSubmit}
 										>
