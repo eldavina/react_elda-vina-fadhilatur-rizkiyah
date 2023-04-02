@@ -12,5 +12,5 @@ getByAltText : < img alt="profile" />
 <li>DisplayValue</li>
 getByDisplayValue : < input value = "JavaScript" />
 </ul>
-<h2>Menginstal React Hook Testing Library </h2>
-Kita dapat menginstall react hook testing library dengan cara "npm install -D @testing-library/react-hooks"
+<h2> Menginstal React Hook Testing Library </h2>
+Kita dapat menginstall React Hook Testing Library dengan cara "npm install -D @testing-library/react-hooks"
