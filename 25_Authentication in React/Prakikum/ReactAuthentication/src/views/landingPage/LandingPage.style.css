@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Open+Sans:wght@400;700&family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: "Jost", sans-serif;
+}
+body {
+	display: block !important;
+}
+/* nav{
+    font-family: 'Roboto', sans-serif;
+}
+.navbar-brand{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28.5px;
+}
+nav a{
+    font-size: 16px;
+    padding: 12px;
+}
+.navbar-nav{
+    display: none;
+}
+#nav-items-right{
+    display: block;
+} */
+@media only screen and (max-width: 992px) {
+	.navbar-nav {
+		display: block;
+	}
+	#nav-items-right {
+		display: none;
+	}
+	.container-banner {
+		flex-direction: column-reverse;
+		min-height: 500px;
+		padding: 50px;
+	}
+	#gambar-banner-kanan {
+		width: 90%;
+		height: 90%;
+	}
+	.footer-atas {
+		flex-wrap: wrap;
+		min-height: 500px;
+		max-height: fit-content;
+		/* margin: auto;*/
+		padding-left: 10%;
+		padding-right: 10%;
+		margin-left: 30px;
+	}
+	.adam,
+	.menu-footer a,
+	.our-social #cras-fermentum,
+	#arsha {
+		max-width: fit-content;
+	}
+	.menu-footer a {
+		line-height: 40%;
+	}
+}
