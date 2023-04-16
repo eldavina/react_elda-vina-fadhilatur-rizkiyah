@@ -3,7 +3,7 @@ import { authReducer } from "./authSlice";
 // import { createReducer } from "./CreateProductSlice";
 
 const reducer = combineReducers({
-	create: createReducer,
+	// create: createReducer,
 	auth: authReducer,
 });
 
