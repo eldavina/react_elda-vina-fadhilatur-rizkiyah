@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Open+Sans:wght@400;700&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.footer-atas{
+    display: flex;
+    justify-content: space-around;
+    padding-right : 93px;
+    padding-left : 93px;
+    align-items: center;
+    height: 339.19px;
+    background: #FFFFFF;
+}
+#arsha{
+    display: flex;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 28px;
+    color: #37517E;
+}
+.adam, .menu-footer a, .our-social #cras-fermentum{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color:  #5E5E5E;
+    text-decoration: none;
+    width: fit-content;
+}
+#judul-footer{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #37517E;
+}
+.menu-footer a{
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    left: 20px;
+    line-height: 40px;
+}
+#cras-fermentum{
+    font-family: 'Open Sans', sans-serif;
+}
+.social-account{
+    display: flex;
+}
+.social-account a{
+    width: 36px;
+    height: 36px;
+    background: #47B2E4;
+    border-radius: 18px;
+    text-decoration: none;
+    margin-right: 7.64px;
+}
+.footer-bawah{
+    height: 80.8px;
+    /* top: 1408px; */
+    display: flex;
+    justify-content: space-between;
+    background: #37517E;
+    align-items: center;
+    padding: 0 93px;
+}
+#copyright, #designed{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    height: 19px;
+}
+#designed span{
+    color: #47B2E4;
+}
+#copyright span{
+    font-weight: 700;
+}
