@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
 import { authReducer } from "./authSlice";
-import { createReducer } from "./CreateProductSlice";
+// import { createReducer } from "./CreateProductSlice";
 
 const reducer = combineReducers({
 	create: createReducer,
