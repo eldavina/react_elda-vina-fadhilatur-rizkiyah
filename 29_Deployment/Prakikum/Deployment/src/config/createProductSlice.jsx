@@ -120,5 +120,6 @@ const createProductSlice = createSlice({
 	},
 });
 
-export const { actions: createAction, reducer: createReducer } =
-	createProductSlice;
+export const { actions: createAction } = createProductSlice;
+// export const { actions: createAction, reducer: createReducer } =
+// 	createProductSlice;
