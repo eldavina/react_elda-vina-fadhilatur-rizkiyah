@@ -1,0 +1,292 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`InputProduct.molecules.jsx > Should render correctly 1`] = `
+<div
+  className="inpuut-product"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="row justify-content-center"
+      >
+        <div
+          className="col-5"
+        >
+          <div
+            className="col"
+          >
+            <form
+              className="justify-content-end needs-validation"
+              id="form"
+              noValidate=""
+            >
+              <h2
+                style={
+                  {
+                    "fontSize": 23,
+                  }
+                }
+              >
+                Detail Product
+              </h2>
+              <div
+                className="mb-3 col-6"
+              >
+                <label
+                  className="form-label"
+                  htmlFor="name"
+                >
+                  Product Name
+                   
+                </label>
+                <input
+                  className="form-control undefined"
+                  data-testid="inputname-input"
+                  id="name"
+                  name="name"
+                  onChange={[Function]}
+                  onEdit=""
+                  required=""
+                  type="text"
+                  value=""
+                />
+                <div
+                  className="invalid-feedback"
+                  data-testid="inputname-error"
+                >
+                  Name must have up to 5 characters, must not exceed 25 characters, and must not contain symbol.
+                </div>
+              </div>
+              <div
+                className="mb-3 col-5"
+              >
+                <label
+                  className="form-label"
+                  htmlFor="category"
+                >
+                  Product Category
+                   
+                </label>
+                <select
+                  aria-label="productcategory"
+                  className="form-select undefined"
+                  id="category"
+                  name="category"
+                  onChange={[Function]}
+                  onEdit=""
+                  placeholder="Choose...."
+                  required=""
+                  value=""
+                >
+                  <option
+                    value=""
+                  >
+                    Choose....
+                  </option>
+                  <option
+                    value="A"
+                  >
+                    A
+                  </option>
+                  <option
+                    value="B"
+                  >
+                    B
+                  </option>
+                  <option
+                    value="C"
+                  >
+                    C
+                  </option>
+                </select>
+                <div
+                  className="invalid-feedback"
+                />
+              </div>
+              <div
+                className="mb-3"
+              >
+                <label
+                  className="form-label"
+                  htmlFor="image"
+                >
+                  Image of Product
+                </label>
+                <div
+                  className="col-6"
+                >
+                  <input
+                    className="form-control btn btn-primary undefined"
+                    id="image"
+                    name="image"
+                    onChange={[Function]}
+                    onEdit=""
+                    required=""
+                    type="file"
+                    value=""
+                  />
+                </div>
+                <div
+                  className="invalid-feedback"
+                />
+              </div>
+              <div
+                className="mb-3"
+              >
+                <label
+                  className="form-label"
+                  htmlFor="freshness"
+                >
+                  Product Freshness
+                   
+                </label>
+                <div
+                  className="form-control undefined"
+                  id="form-check has-validation"
+                >
+                  <div
+                    className="form-check"
+                  >
+                    <input
+                      checked={false}
+                      className="form-check-input"
+                      id="freshness"
+                      name="freshness"
+                      onChange={[Function]}
+                      onEdit={false}
+                      type="radio"
+                      value="Brand New"
+                    />
+                    <label
+                      className="form-check-label"
+                      htmlFor="brandnew"
+                    >
+                      Brand New
+                    </label>
+                  </div>
+                  <div
+                    className="form-check"
+                  >
+                    <input
+                      checked={false}
+                      className="form-check-input"
+                      id="freshness"
+                      name="freshness"
+                      onChange={[Function]}
+                      onEdit={false}
+                      type="radio"
+                      value="Second Hand"
+                    />
+                    <label
+                      className="form-check-label"
+                      htmlFor="secondhand"
+                    >
+                      Second Hand
+                    </label>
+                  </div>
+                  <div
+                    className="form-check"
+                  >
+                    <input
+                      checked={false}
+                      className="form-check-input"
+                      id="freshness"
+                      name="freshness"
+                      onChange={[Function]}
+                      onEdit={false}
+                      type="radio"
+                      value="Refurbished"
+                    />
+                    <label
+                      className="form-check-label"
+                      htmlFor="refurbished"
+                    >
+                      Refurbished
+                    </label>
+                  </div>
+                  <div
+                    className="invalid-feedback"
+                  />
+                </div>
+              </div>
+              <label
+                className="form-label"
+                htmlFor="description"
+              >
+                Additional Description
+              </label>
+              <div
+                className="input-group"
+              >
+                <textarea
+                  aria-label="With textarea"
+                  className="form-control"
+                  id="description"
+                  name="description"
+                  onChange={[Function]}
+                  onEdit=""
+                  required=""
+                  value=""
+                />
+                <div
+                  className="invalid-feedback"
+                >
+                  Please fill out this field
+                </div>
+              </div>
+              <label
+                className="form-label"
+                htmlFor="productprice"
+              >
+                Product Price
+                 
+              </label>
+              <div
+                className="mb-3"
+              >
+                <div
+                  className="col-2"
+                >
+                  <input
+                    className="form-control undefined"
+                    id="price"
+                    name="price"
+                    onChange={[Function]}
+                    onEdit=""
+                    placeholder="$ 100"
+                    required=""
+                    type="number"
+                    value=""
+                  />
+                </div>
+                <div
+                  className="invalid-feedback"
+                />
+              </div>
+              <div
+                className="col-auto"
+              >
+                <button
+                  className="btn btn-primary w-100"
+                  data-bs-target="#submit"
+                  data-bs-toggle="modal"
+                  data-testid="btnSubmit"
+                  id="button-add"
+                  onClick={[Function]}
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
