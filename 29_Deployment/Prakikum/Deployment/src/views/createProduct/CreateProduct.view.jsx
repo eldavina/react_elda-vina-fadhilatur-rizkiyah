@@ -6,7 +6,6 @@ import Navbar from "../../component/organism/Navbar.organism";
 import Article from "../../Article";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import { createAction } from "../../config/CreateProductSlice";
 import {
 	useCreateProductSelector,
 	useTypeProductSelector,
