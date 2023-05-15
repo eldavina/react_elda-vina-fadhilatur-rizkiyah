@@ -1,4 +1,4 @@
-## uery with apollo client
+## uery with apollo client.
 
 1. import gql aand useQuery then write your query, or you can copy from hasura console instead.
 2. Get initial data by doing query on the server, call useQuery in top of your code.
